@@ -41,5 +41,5 @@ jobs:
 
       - name: Run SQL script
         run: |
-          mysql -h 127.0.0.1 -P 3306 -uroot -proot testdb < test.sql
+          mysql -h 127.0.0.1 -P 3306 -uroot -proot -vvv testdb < test.sql
 
