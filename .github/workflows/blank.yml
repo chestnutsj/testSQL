@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     services:
       mysql:
-        image: mysql:8.0
+        image: mysql:8.4.4
         env:
           MYSQL_ROOT_PASSWORD: root
           MYSQL_DATABASE: testdb
@@ -41,5 +41,5 @@ jobs:
 
       - name: Run SQL script
         run: |
-          mysql -h 127.0.0.1 -P 3306 -uroot -proot testdb < your_test.sql
+          mysql -h 127.0.0.1 -P 3306 -uroot -proot testdb < test.sql
 
